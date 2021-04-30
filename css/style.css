@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Karantina:wght@300&family=Roboto+Condensed:wght@400;700&family=Zen+Dots&display=swap');
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a span{
+  position:relative;
+  display:inline-block;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  75%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.btn{
+  padding:10px;
+  border: 2px solid #87d1e4;
+  color: #5DFC0A;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.btn:hover{
+  text-decoration:none;
+  color: #5DFC0A;
+}
+
+div .rocket{ margin-top:180px; transform-origin:200% center; position:relative; animation:rotate 10s linear infinite; }
+div .rocket:before { content:''; position:absolute; animation:rotate 10s linear reverse infinite; }
+@keyframes rotate { 
+  0%{
+    transform: translate(-20px,-20px);
+  }
+  25%{
+    transform: translate(-70px,-70px);
+  }
+  50%{
+    transform: translate(-120px,-120px);
+  }
+  75%{
+    transform: translate(-170px,-170px);
+  }
+  100% { transform:translate(-400px,-400px); 
+  } 
+}
